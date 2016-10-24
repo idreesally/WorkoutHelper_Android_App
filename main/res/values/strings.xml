@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="this_is_fragment_a">This is FRAGMENT A</string>
+</resources>

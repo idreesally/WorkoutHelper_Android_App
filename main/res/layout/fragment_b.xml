@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/userNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:text="After entering number of reps, click enter or Done Button. This will set the maximum number of reps possible to your entry. If set above 15, the maximum number of reps is automatically set back to 15. Tap on the button to increase rep count by 1."
+                android:textSize="15dp"/>
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:maxLength="20"
+                android:textSize="22dp"
+                android:id="@+id/exercise1"
+                android:hint="Exercise 1"
+                android:layout_below="@+id/userNotice"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:maxLength="2"
+                android:textSize="22dp"
+                android:hint="Reps"
+                android:inputType="number"
+                android:id="@+id/e1Reps"
+                android:tag="e1Reps"
+                android:layout_below="@+id/userNotice"
+                android:layout_alignBottom="@id/exercise1"
+                android:layout_toEndOf="@+id/exercise1" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e1Button1"
+                android:layout_below="@+id/exercise1"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e1Button2"
+                android:layout_alignBottom="@+id/e1Button1"
+                android:layout_toEndOf="@+id/e1Button1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e1Button3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/e1Button2"
+                android:layout_toEndOf="@+id/e1Button2" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e1Button4"
+                android:layout_alignBottom="@+id/e1Button3"
+                android:layout_toEndOf="@+id/e1Button3" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e1Button5"
+                android:layout_alignTop="@+id/e1Button4"
+                android:layout_toEndOf="@+id/e1Button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/e1DoneButton"
+                android:layout_below="@+id/userNotice"
+                android:layout_toEndOf="@+id/e1Reps"
+                android:layout_alignBottom="@+id/e1Reps" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:maxLength="20"
+                android:textSize="22dp"
+                android:id="@+id/exercise2"
+                android:hint="Exercise 2"
+                android:layout_below="@+id/e1Button1"
+                />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:maxLength="2"
+                android:textSize="22dp"
+                android:hint="Reps"
+                android:inputType="number"
+                android:id="@+id/e2Reps"
+                android:layout_alignBottom="@id/exercise2"
+                android:layout_toEndOf="@+id/exercise2" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e2Button1"
+                android:layout_below="@+id/exercise2"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e2Button2"
+                android:layout_alignBottom="@+id/e2Button1"
+                android:layout_toEndOf="@+id/e2Button1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e2Button3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/e2Button2"
+                android:layout_toEndOf="@+id/e2Button2" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e2Button4"
+                android:layout_alignBottom="@+id/e2Button3"
+                android:layout_toEndOf="@+id/e2Button3" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e2Button5"
+                android:layout_alignTop="@+id/e2Button4"
+                android:layout_toEndOf="@+id/e2Button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/e2DoneButton"
+                android:layout_toEndOf="@+id/e2Reps"
+                android:layout_alignBottom="@+id/e2Reps" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:maxLength="20"
+                android:textSize="22dp"
+                android:id="@+id/exercise3"
+                android:hint="Exercise 3"
+                android:layout_below="@+id/e2Button1"
+                />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:maxLength="2"
+                android:textSize="22dp"
+                android:hint="Reps"
+                android:inputType="number"
+                android:id="@+id/e3Reps"
+                android:layout_alignBottom="@id/exercise3"
+                android:layout_toEndOf="@+id/exercise3" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e3Button1"
+                android:layout_below="@+id/exercise3"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e3Button2"
+                android:layout_alignBottom="@+id/e3Button1"
+                android:layout_toEndOf="@+id/e3Button1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e3Button3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/e3Button2"
+                android:layout_toEndOf="@+id/e3Button2" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e3Button4"
+                android:layout_alignBottom="@+id/e3Button3"
+                android:layout_toEndOf="@+id/e3Button3" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e3Button5"
+                android:layout_alignTop="@+id/e3Button4"
+                android:layout_toEndOf="@+id/e3Button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/e3DoneButton"
+                android:layout_toEndOf="@+id/e3Reps"
+                android:layout_alignBottom="@+id/e3Reps" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:maxLength="20"
+                android:textSize="22dp"
+                android:id="@+id/exercise4"
+                android:hint="Exercise 4"
+                android:layout_below="@+id/e3Button1"
+                />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:maxLength="2"
+                android:textSize="22dp"
+                android:hint="Reps"
+                android:inputType="number"
+                android:id="@+id/e4Reps"
+                android:layout_alignBottom="@id/exercise4"
+                android:layout_toEndOf="@+id/exercise4" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e4Button1"
+                android:layout_below="@+id/exercise4"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e4Button2"
+                android:layout_alignBottom="@+id/e4Button1"
+                android:layout_toEndOf="@+id/e4Button1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e4Button3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/e4Button2"
+                android:layout_toEndOf="@+id/e4Button2" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e4Button4"
+                android:layout_alignBottom="@+id/e4Button3"
+                android:layout_toEndOf="@+id/e4Button3" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e4Button5"
+                android:layout_alignTop="@+id/e4Button4"
+                android:layout_toEndOf="@+id/e4Button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/e4DoneButton"
+                android:layout_toEndOf="@+id/e4Reps"
+                android:layout_alignBottom="@+id/e4Reps" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:maxLength="20"
+                android:textSize="22dp"
+                android:id="@+id/exercise5"
+                android:hint="Exercise 5"
+                android:layout_below="@+id/e4Button1"
+                />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:maxLength="2"
+                android:textSize="22dp"
+                android:hint="Reps"
+                android:inputType="number"
+                android:id="@+id/e5Reps"
+                android:layout_alignBottom="@id/exercise5"
+                android:layout_toEndOf="@+id/exercise5" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e5Button1"
+                android:layout_below="@+id/exercise5"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e5Button2"
+                android:layout_alignBottom="@+id/e5Button1"
+                android:layout_toEndOf="@+id/e5Button1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e5Button3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/e5Button2"
+                android:layout_toEndOf="@+id/e5Button2" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e5Button4"
+                android:layout_alignBottom="@+id/e5Button3"
+                android:layout_toEndOf="@+id/e5Button3" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e5Button5"
+                android:layout_alignTop="@+id/e5Button4"
+                android:layout_toEndOf="@+id/e5Button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/e5DoneButton"
+                android:layout_toEndOf="@+id/e5Reps"
+                android:layout_alignBottom="@+id/e5Reps" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:maxLength="20"
+                android:textSize="22dp"
+                android:id="@+id/exercise6"
+                android:hint="Exercise 6"
+                android:layout_below="@+id/e5Button1"
+                />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:maxLength="2"
+                android:textSize="22dp"
+                android:hint="Reps"
+                android:inputType="number"
+                android:id="@+id/e6Reps"
+                android:layout_alignBottom="@id/exercise6"
+                android:layout_toEndOf="@+id/exercise6" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e6Button1"
+                android:layout_below="@+id/exercise6"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e6Button2"
+                android:layout_alignBottom="@+id/e6Button1"
+                android:layout_toEndOf="@+id/e6Button1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e6Button3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/e6Button2"
+                android:layout_toEndOf="@+id/e6Button2" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e6Button4"
+                android:layout_alignBottom="@+id/e6Button3"
+                android:layout_toEndOf="@+id/e6Button3" />
+
+            <Button
+                android:layout_width="@dimen/rep_button_width"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25dp"
+                android:id="@+id/e6Button5"
+                android:layout_alignTop="@+id/e6Button4"
+                android:layout_toEndOf="@+id/e6Button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/e6DoneButton"
+                android:layout_toEndOf="@+id/e6Reps"
+                android:layout_alignBottom="@+id/e6Reps" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

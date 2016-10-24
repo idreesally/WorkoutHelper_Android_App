@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/IndianRed"
+    android:id="@+id/fragment_a_id">
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:background="@color/white"
+        android:layout_above="@+id/button2"
+        android:layout_marginBottom="70dp"
+        android:textSize="40dp"
+        android:text="New Workout"
+        android:textStyle="bold"
+        android:id="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:background="@color/white"
+        android:textSize="38dp"
+        android:text="Old Workouts"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:background="@color/white"
+        android:text="Close"
+        android:textSize="40dp"
+        android:id="@+id/button3"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
